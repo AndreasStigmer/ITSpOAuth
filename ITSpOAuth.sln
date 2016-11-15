@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOAuth", "ITSpOAuth\ITSpOAuth.csproj", "{2CD8D4D6-27D2-4DF2-9056-FD280A9E4628}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOAuth.OAuth", "ITSpOAuth.OAuth\ITSpOAuth.OAuth.csproj", "{48C4FF0B-E60A-4FF3-8070-7EAB0C3CCCA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOauth.Api", "ITSpOauth.Api\ITSpOauth.Api.csproj", "{0C1B362A-F2DC-4186-9A1B-DA7AB5C4A04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOauth.MvcClient", "ITSpOauth.MvcClient\ITSpOauth.MvcClient.csproj", "{C9F29D05-E79B-4E97-926D-361E8A54AAA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOauth.Shared", "ITSpOauth.Shared\ITSpOauth.Shared.csproj", "{AB42A2C7-C399-4453-B89E-1D6515790A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOauth.Models", "ITSpOauth.Models\ITSpOauth.Models.csproj", "{D41DBF52-6272-460A-AB84-4AD67D08BA9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOAuth.Data", "ITSpOAuth.Data\ITSpOAuth.Data.csproj", "{D1F62777-988F-4EA2-8009-79ABF0929F88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +21,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2CD8D4D6-27D2-4DF2-9056-FD280A9E4628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CD8D4D6-27D2-4DF2-9056-FD280A9E4628}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CD8D4D6-27D2-4DF2-9056-FD280A9E4628}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CD8D4D6-27D2-4DF2-9056-FD280A9E4628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C4FF0B-E60A-4FF3-8070-7EAB0C3CCCA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C4FF0B-E60A-4FF3-8070-7EAB0C3CCCA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C4FF0B-E60A-4FF3-8070-7EAB0C3CCCA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C4FF0B-E60A-4FF3-8070-7EAB0C3CCCA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C1B362A-F2DC-4186-9A1B-DA7AB5C4A04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C1B362A-F2DC-4186-9A1B-DA7AB5C4A04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C1B362A-F2DC-4186-9A1B-DA7AB5C4A04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C1B362A-F2DC-4186-9A1B-DA7AB5C4A04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F29D05-E79B-4E97-926D-361E8A54AAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F29D05-E79B-4E97-926D-361E8A54AAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F29D05-E79B-4E97-926D-361E8A54AAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F29D05-E79B-4E97-926D-361E8A54AAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB42A2C7-C399-4453-B89E-1D6515790A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB42A2C7-C399-4453-B89E-1D6515790A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB42A2C7-C399-4453-B89E-1D6515790A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB42A2C7-C399-4453-B89E-1D6515790A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D41DBF52-6272-460A-AB84-4AD67D08BA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D41DBF52-6272-460A-AB84-4AD67D08BA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D41DBF52-6272-460A-AB84-4AD67D08BA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D41DBF52-6272-460A-AB84-4AD67D08BA9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1F62777-988F-4EA2-8009-79ABF0929F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F62777-988F-4EA2-8009-79ABF0929F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F62777-988F-4EA2-8009-79ABF0929F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F62777-988F-4EA2-8009-79ABF0929F88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
