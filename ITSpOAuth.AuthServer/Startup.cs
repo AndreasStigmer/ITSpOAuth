@@ -7,6 +7,7 @@ using ITSpOAuth.OAuth;
 using System.Security.Cryptography.X509Certificates;
 using ITSpOAuth.Shared;
 using System.Diagnostics;
+using System.Web.Configuration;
 
 [assembly: OwinStartup(typeof(ITSpOAuth.AuthServer.Startup))]
 
@@ -37,9 +38,12 @@ namespace ITSpOAuth.AuthServer
                 
                 //kopplar in middlewaren i OWIN pipen
                 idsrv.UseIdentityServer(options);
+                Debug.Write(WebConfigurationManager.GetSection("system.webServer").ToString());
+                Debug.Write("Andreas");
             });
 
-            Debug.Write(System.Con)
+            
+           
         }
     }
 }
