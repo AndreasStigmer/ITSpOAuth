@@ -15,10 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOauth.Models", "ITSpOau
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOAuth.Data", "ITSpOAuth.Data\ITSpOAuth.Data.csproj", "{D1F62777-988F-4EA2-8009-79ABF0929F88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOAuth.AuthServer", "ITSpOAuth.AuthServer\ITSpOAuth.AuthServer.csproj", "{6EE425A9-F1F8-44AC-8F6A-63596E2918F6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSpOAuth.AuthServer2", "ITSpOAuth.AuthServer2\ITSpOAuth.AuthServer2.csproj", "{3364F47D-75D8-4737-8D29-81BA3EBEF09A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,14 +45,6 @@ Global
 		{D1F62777-988F-4EA2-8009-79ABF0929F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1F62777-988F-4EA2-8009-79ABF0929F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1F62777-988F-4EA2-8009-79ABF0929F88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6EE425A9-F1F8-44AC-8F6A-63596E2918F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EE425A9-F1F8-44AC-8F6A-63596E2918F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EE425A9-F1F8-44AC-8F6A-63596E2918F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EE425A9-F1F8-44AC-8F6A-63596E2918F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3364F47D-75D8-4737-8D29-81BA3EBEF09A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3364F47D-75D8-4737-8D29-81BA3EBEF09A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3364F47D-75D8-4737-8D29-81BA3EBEF09A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3364F47D-75D8-4737-8D29-81BA3EBEF09A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,6 +14,8 @@ namespace ITSpOAuth.OAuth
     {
         public void Configuration(IAppBuilder app)
         {
+            //Mappar IdentityServer till pathen /identity
+         
             app.Map("/identity", idsrv =>
             {
                 //Sökväg till certifikat och privat nyckel
@@ -33,7 +35,7 @@ namespace ITSpOAuth.OAuth
                 options.PublicOrigin = Constants.UserProfileSTSOrigin;
                 options.SiteName = "Programme site";
 
-                //kopplar in middlewaren i OWIN pipen
+                //kopplar in middlewaren i OWIN pipen idsrv är IAppBuildern
                 idsrv.UseIdentityServer(options);
             });
             // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
