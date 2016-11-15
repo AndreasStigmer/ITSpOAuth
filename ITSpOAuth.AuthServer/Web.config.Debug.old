@@ -27,4 +27,7 @@
       </customErrors>
     -->
   </system.web>
+  <system.webServer>
+    <modules runAllManagedModulesForAllRequests="true"></modules>
+  </system.webServer>
 </configuration>

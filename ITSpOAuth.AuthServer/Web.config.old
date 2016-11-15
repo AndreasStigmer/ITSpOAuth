@@ -4,25 +4,9 @@
   http://go.microsoft.com/fwlink/?LinkId=169433
   -->
 <configuration>
-  <system.web>
-    <compilation debug="true" targetFramework="4.5.2"/>
-    <httpRuntime targetFramework="4.5.2"/>
-    <httpModules>
-      <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web"/>
-    </httpModules>
-  </system.web>
-
-  <system.diagnostics>
-    <trace autoflush="true"
-           indentsize="4">
-      <listeners>
-        <add name="myListener"
-             type="System.Diagnostics.TextWriterTraceListener"
-             initializeData="Trace.log" />
-        <remove name="Default" />
-      </listeners>
-    </trace>
-  </system.diagnostics>
+ 
+ 
+  
   <system.codedom>
     <compilers>
       <compiler language="c#;cs;csharp" extension=".cs"
@@ -34,12 +18,15 @@
     </compilers>
   </system.codedom>
 
+  <system.web>
+
+    <compilation debug="true" targetFramework="4.5.2"/>
+    <httpRuntime targetFramework="4.5.2"/>
+  </system.web>
+  
   <system.webServer>
     <validation validateIntegratedModeConfiguration="false"/>
     <modules runAllManagedModulesForAllRequests="true">
-      <remove name="ApplicationInsightsWebTracking"/>
-      <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web"
-        preCondition="managedHandler"/>
     </modules>
   </system.webServer>
 </configuration>
