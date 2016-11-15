@@ -2,13 +2,15 @@
 using System.Threading.Tasks;
 using Microsoft.Owin;
 using Owin;
-using ITSpOAuth.Shared;
 using IdentityServer3.Core.Configuration;
+using ITSpOAuth.OAuth;
 using System.Security.Cryptography.X509Certificates;
+using ITSpOAuth.Shared;
+using System.Diagnostics;
 
-[assembly: OwinStartup(typeof(ITSpOAuth.OAuth.Startup))]
+[assembly: OwinStartup(typeof(ITSpOAuth.AuthServer.Startup))]
 
-namespace ITSpOAuth.OAuth
+namespace ITSpOAuth.AuthServer
 {
     public class Startup
     {
@@ -32,11 +34,12 @@ namespace ITSpOAuth.OAuth
                 options.IssuerUri = Constants.IssuerURI;
                 options.PublicOrigin = Constants.UserProfileSTSOrigin;
                 options.SiteName = "Programme site";
-
+                
                 //kopplar in middlewaren i OWIN pipen
                 idsrv.UseIdentityServer(options);
             });
-            // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
+
+            Debug.Write(System.Con)
         }
     }
 }

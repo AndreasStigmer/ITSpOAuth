@@ -13,8 +13,8 @@ namespace ITSpOAuth.Shared
     public static class Constants
     {
         //Authserver endpoints
-        public const string IssuerURI = "https://userprofileSTS/44698/";
-        public const string UserProfileSTSOrigin = "https://localhost/44698";
+        public const string IssuerURI = "https://userprofileSTS/44300/";
+        public const string UserProfileSTSOrigin = "https://localhost/44300";
         public const string UserProfileSTS = UserProfileSTSOrigin+"/identity";
         public const string UserProfileSTSTokenEndpoint = UserProfileSTS + "/connect/token";
 
