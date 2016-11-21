@@ -23,6 +23,7 @@ namespace ITSpOauth.Api.Controllers
         /// </summary>
         /// <returns>Json serialiserad lista med UserProfileViewModels</returns>
         [HttpGet]
+        [Authorize]
         public IHttpActionResult Get()
         {
             ModelFactory mf = new ModelFactory();

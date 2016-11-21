@@ -38,6 +38,7 @@ namespace ITSpOAuth.OAuth
                 //kopplar in middlewaren i OWIN pipen idsrv är IAppBuildern
                 idsrv.UseIdentityServer(options);
             });
+            
             // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
         }
     }
