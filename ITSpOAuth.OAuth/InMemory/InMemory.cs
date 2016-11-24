@@ -1,5 +1,6 @@
 ﻿using IdentityServer3.Core.Models;
 using IdentityServer3.Core.Services.InMemory;
+using ITSpOAuth.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,10 +26,21 @@ namespace ITSpOAuth.OAuth
             return new List<Client>()
             {
                 new Client() {
-                    ClientId="mvcclient",
+                    ClientId="mvcclientcredentials",
                     ClientSecrets=new List<Secret>() { new Secret("hemligt".Sha256())},
                     AllowAccessToAllScopes=true,
                     Flow=Flows.ClientCredentials
+                },
+                new Client() {
+                    ClientId="mvcauthcode",
+                    ClientSecrets=new List<Secret>() { new Secret("hemligt".Sha256())},
+                    AllowAccessToAllScopes=true,
+                    Flow=Flows.AuthorizationCode,
+                    RedirectUris=new List<string> {
+                        Constants.MvcAuthCodeCallback
+                    }
+                    
+
                 }
             };
 

@@ -13,13 +13,16 @@ namespace ITSpOAuth.Shared
     public static class Constants
     {
         //Authserver endpoints
-        public const string IssuerURI = "https://userprofileSTS/44300/";
-        public const string UserProfileSTSOrigin = "https://localhost/44300";
+        public const string IssuerURI = "https://userprofileSTS:44300/";
+        public const string UserProfileSTSOrigin = "https://localhost:44300";
         public const string UserProfileSTS = UserProfileSTSOrigin+"/identity";
         public const string UserProfileSTSTokenEndpoint = UserProfileSTS + "/connect/token";
+        public const string UserProfileSTSAuthorizeEndpoint = UserProfileSTS + "/connect/authorize";
 
         //Api endpoints
         public const string UserProfileAPI = "http://localhost:44719/";
 
+        //MvcEndpoints
+        public const string MvcAuthCodeCallback = "http://localhost:44744/Callback";
     }
 }

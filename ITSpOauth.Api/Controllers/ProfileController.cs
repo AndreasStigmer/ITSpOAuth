@@ -14,6 +14,7 @@ namespace ITSpOauth.Api.Controllers
     /// <summary>
     /// Hantera olika användarprofiler
     /// </summary>
+    [Authorize]
     public class ProfileController : ApiController
     {
         /// <summary>
