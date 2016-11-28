@@ -35,10 +35,15 @@ namespace ITSpOauth.MvcClient.Client
             {
                 return cookie["token"];
             }
+           
 
+
+            
             AuthorizeRequest ar = new AuthorizeRequest(Constants.UserProfileSTSAuthorizeEndpoint);
             var state = HttpContext.Current.Request.Url.OriginalString;
-            var url = ar.CreateAuthorizeUrl("mvcauthcode", "code", "studentScope", Constants.MvcAuthCodeCallback,state);
+            var url = ar.CreateAuthorizeUrl("mvcauthcode", "code", "studentScope", 
+                Constants.MvcAuthCodeCallback,state);
+
             HttpContext.Current.Response.Redirect(url);
 
             return null;

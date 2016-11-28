@@ -13,6 +13,7 @@ namespace ITSpOauth.MvcClient.Controllers
         // GET: Secret
         public async Task<ActionResult> Index()
         {
+           
             HttpClient hc=Client.HttpCLientHelper.GetClient();
             var data = await hc.GetStringAsync("/api/profile");
             ViewBag.data = data;

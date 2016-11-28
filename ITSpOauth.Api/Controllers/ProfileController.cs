@@ -23,6 +23,7 @@ namespace ITSpOauth.Api.Controllers
         /// med "db.UserProfiles.ToList()" innan projektionen sker med Select. 
         /// </summary>
         /// <returns>Json serialiserad lista med UserProfileViewModels</returns>
+
         [HttpGet]
         public IHttpActionResult Get()
         {

@@ -26,6 +26,7 @@ namespace ITSpOauth.MvcClient.Controllers
             if (token != null)
             {
                 Response.Cookies["cookie"]["token"] = token;
+            
             }
 
             Response.Redirect(Request.QueryString["state"]);
