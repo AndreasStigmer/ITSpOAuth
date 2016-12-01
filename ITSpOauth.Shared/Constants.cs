@@ -18,11 +18,14 @@ namespace ITSpOAuth.Shared
         public const string UserProfileSTS = UserProfileSTSOrigin+"/identity";
         public const string UserProfileSTSTokenEndpoint = UserProfileSTS + "/connect/token";
         public const string UserProfileSTSAuthorizeEndpoint = UserProfileSTS + "/connect/authorize";
+        public const string UserProfileSTSUserInfoEndpoint = UserProfileSTS + "/connect/userinfo";
 
         //Api endpoints
         public const string UserProfileAPI = "http://localhost:44719/";
 
         //MvcEndpoints
         public const string MvcAuthCodeCallback = "http://localhost:44744/Callback";
+
+         public const string MvcOpenIdCallback = "http://localhost:27446/";
     }
 }
