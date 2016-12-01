@@ -11,12 +11,12 @@ namespace ItSpOauth.MvcOpenIdConnect.Controllers
     public class SecretController : Controller
     {
         // GET: Secret
+
+        //Kräver att aktuell Identity har en "role" claim med värdet "admin"
+        [Authorize(Roles ="admin")]
         public ActionResult Index()
         {
-            ClaimsIdentity ci = User.Identity as ClaimsIdentity;
-
-            string name = ci.Name;
-
+            
             return View();
         }
     }
